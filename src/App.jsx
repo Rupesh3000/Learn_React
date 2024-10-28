@@ -1,4 +1,4 @@
-import './App.css'
+// import './App.css'
 
 import BGChanger from './project_01/BGchanger'
 
