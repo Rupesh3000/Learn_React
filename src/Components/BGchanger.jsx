@@ -4,7 +4,7 @@ function BGChanger() {
     const [color, setColor] = useState("black")
 
     return (
-        <div className='w-full h-screen flex items-end justify-center' style={{ backgroundColor: color }}>
+        <div className='w-full h-screen flex items-end justify-center ' style={{ backgroundColor: color }}>
 
             <div className='mb-4 flex flex-wrap justify-center bottom-12 inset-x-0 px-3 py-2 rounded-3xl text-black gap-3 outline-none bg-white w-fit'>
                 <button onClick={() => setColor("green")}
@@ -31,6 +31,10 @@ function BGChanger() {
                     className="outline-none px-4 py-1 rounded-full"
                     style={{ backgroundColor: "indigo" }}>
                     Indigo</button>
+                <button onClick={() => setColor("black")}
+                    className="outline-none px-4 py-1 rounded-full text-white"
+                    style={{ backgroundColor: "black" }}>
+                    Black</button>
             </div>
         </div>
     )

@@ -1,12 +1,15 @@
 // import './App.css'
 
-import BGChanger from './project_01/BGchanger'
+import BGChanger from "./Components/BGchanger"
+import Counter from "./Components/Counter"
+
 
 function App() {
- 
+
 
   return (
     <>
+      <Counter />
       <BGChanger />
     </>
   )
