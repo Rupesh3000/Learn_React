@@ -8,6 +8,7 @@ import Home from './Reactrouter/Home/Home.jsx'
 import About from './Reactrouter/About/About.jsx'
 import Contact from './Reactrouter/Contact/Contact.jsx'
 import User from './Reactrouter/User/User.jsx'
+import Github, { GithubInfoLoader } from './Reactrouter/Github/Github.jsx'
 
 
 
@@ -44,7 +45,12 @@ function App() {
         <Route path='' element={<Home />} />
         <Route path='about' element={<About />} />
         <Route path='contact' element={<Contact />} />
-        {/* <Route path='user/:userId' element={<User />} /> */}
+        <Route path='user/:userid' element={<User />} />
+        <Route
+          loader={GithubInfoLoader}
+          path='github'
+          element={<Github />} />
+
       </Route>
     )
   )
